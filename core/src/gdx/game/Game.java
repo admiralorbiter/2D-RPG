@@ -1,8 +1,6 @@
-package Game;
-
+package gdx.game;
 
 import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
@@ -14,7 +12,7 @@ public class Game extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture(Gdx.files.internal("dalle3.png"));
+		img = new Texture("dalle3.png");
 	}
 
 	@Override
